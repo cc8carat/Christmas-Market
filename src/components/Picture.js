@@ -18,11 +18,11 @@ const Picture = () => {
     className={isActive ? 'toggleCard': 'main-div'}
     onClick={toggleClass}> 
        <div className="frontSide">
-         <img src={XmasTree} alt="picture 1" />;
+         <img src={XmasTree} alt="picture 1" />
        </div>
        <div className="backSide">
-         <img src={XmasTree2} alt="picture of a christmas tree" />
-       </div>
+                  <img src={XmasTree2} alt="picture of a christmas tree" />
+                </div>
     </div>
     </section>
     )
