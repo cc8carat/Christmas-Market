@@ -10,7 +10,7 @@ body {
   font-weight: 200;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
@@ -130,4 +130,8 @@ section {
 
 .navigation {
   padding: 2rem 1rem;
+}
+
+.xmasTree{
+  font-size: 5rem;
 }
