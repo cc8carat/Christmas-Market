@@ -1,1 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-image: linear-gradient(to right, #d2cd54, #6b8d1d, #4a7433);
+  color: rgb(248, 254, 217);
+  font-weight: 200;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ h2{
+   padding: 1rem 0rem;
+ }
+
+ button{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  align-items: center;
+  color:rgb(247, 250, 255);
+  background-color: rgb(142, 162, 68);
+  border-radius: 10px;
+  margin:  0.3rem;
+  padding: 0.1rem 0.2rem 0rem 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+ }
+
+ button:hover{
+  color:rgb(153, 155, 160);
+  box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211);
+  background-color: rgb(178, 240, 78);
+  cursor: grabbing;
+}
+
+button:active{
+  color: rgb(11, 74, 11);
+  background-color: rgb(242, 255, 160);
+}
+
+ button h2{
+  padding: 0rem 0.5rem;
+  font-size: 2rem;
+ }
+
+ .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 1rem;
+ }
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+section {
+  perspective: 2000px;
+  overflow: hidden;
+  max-width: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div {
+  display: flex;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s ease;
+  /* transform: rotateY(180deg); */
+  box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+}
+
+.backSide,
+.frontSide {
+  width: 100%;
+  height: 100%;
+}
+
+.backSide {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.frontSide {
+  /* backface-visibility: hidden;   */
+}
+
+.toggleCard {
+  transition: transform 2s ease;
+  box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+  transform: rotateY(180deg);
+}
+/* transform: rotateY(90deg); */
+.link {
+  color: rgb(247, 250, 255);
+  background-color: rgb(142, 162, 68);
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid rgb(33, 67, 12);
+  margin: 20px;
+  padding: 5px 15px 10px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 10% 10%  50% 50%;
+  text-align: end;
+}
+
+.link:hover {
+  color: rgb(11, 74, 11);
+  background-color: rgb(178, 240, 78);
+  cursor: -webkit-grabbing;
+  box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211);
+}
+
+.link:active {
+  color: rgb(11, 74, 11);
+  background-color: rgb(242, 255, 160);
+  cursor: -webkit-grabbing;
+}
+
+.navigation {
+  padding: 2rem 1rem;
+}
