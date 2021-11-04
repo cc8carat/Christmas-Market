@@ -10,9 +10,13 @@ const MarketsList = ({ markets, whatever }) => {
               <div className="thumbnail">
                 <img src={picture[0].fields.file.url} />
               </div>
-              <h2>{title}</h2>
-              <p>{city}</p>
-              <p>{country}</p>
+              <div className="textContainer">
+                <h2>{title}</h2>
+                <div className="cityTag">
+                  <h4>{city}</h4>
+                  <h5>{country}</h5>
+                </div>
+              </div>
             </div>
           );
         }
