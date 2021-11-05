@@ -65,6 +65,8 @@ button h2 {
 img {
   max-height: 100%;
   max-width: 100%;
+ border-radius: 15px;
+ 
 }
 
 section {
@@ -73,8 +75,16 @@ section {
   max-width: 30vh;
   justify-content: center;
   align-items: center;
-}
+  border-radius: 15px;
+  }
 
+section:hover {
+  cursor: pointer;
+  background: rgb(53, 2, 15);
+  box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211);
+  }
+
+ 
 .main-div {
   display: flex;
   position: relative;
@@ -103,6 +113,7 @@ section {
   transition: transform 2s ease;
   box-shadow: rgb(16, 16, 16) 0px 5px 15px;
   transform: rotateY(180deg);
+   
 }
 /* transform: rotateY(90deg); */
 .link {

@@ -9,6 +9,7 @@ import { client } from "./components/client";
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
+  console.log(process.env);
 
   const clickHandler = (event) => {
     //event.target.id = <entry_id>
