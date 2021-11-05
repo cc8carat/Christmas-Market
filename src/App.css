@@ -169,16 +169,23 @@ section {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  pointer-events: none;
+}
+
+.thumbnail {
+  pointer-events: none;
 }
 
 .marketListItem h2 {
   font-family: "Times New Roman", Times, serif;
+  pointer-events: none;
 }
 
 .cityTag {
   text-align: end;
   padding: 0 1em 0.5em 0;
   margin-right: 0;
+  pointer-events: none;
 }
 
 .textContainer {
@@ -186,8 +193,10 @@ section {
   flex-direction: column;
   justify-content: space-between;
   min-height: 9em;
+  pointer-events: none;
 }
 
 .textContainer h2 {
   padding: 1em;
+  pointer-events: none;
 }

@@ -11,7 +11,10 @@ const App = () => {
   const [loading, setLoading] = useState(false);
 
   const clickHandler = (event) => {
+    //event.target.id = <entry_id>
+    //Can try to use client.getEntry('event.target.id') to see if it works
     console.log(event.target);
+    console.log(event.target.id);
   };
 
   useEffect(() => {
@@ -44,7 +47,7 @@ const App = () => {
         {loading ? (
           "🎄"
         ) : (
-          <MarketsList markets={markets} whatever={clickHandler} />
+          <MarketsList markets={markets} onclick={clickHandler} />
         )}
       </div>
     </div>
