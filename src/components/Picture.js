@@ -13,6 +13,7 @@ const Picture = () => {
   };
 
     return (
+  <div className="pictireContainer">
   <section>
     <div 
     className={isActive ? 'toggleCard': 'main-div'}
@@ -26,6 +27,7 @@ const Picture = () => {
                 </div>
     </div>
     </section>
+    </div>
     )
 }
 

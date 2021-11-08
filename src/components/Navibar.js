@@ -10,7 +10,9 @@ const Navibar = () => {
 
 return(
 <>
+<div className='NavBarContainer'>
   <nav>
+    
         <NavLink
           className="link"
           to="/Home">
@@ -26,7 +28,9 @@ return(
           to="/Contact">
           Contact
         </NavLink>
+        
  </nav>
+ </div>
  <Switch>
       <Route path="/Home">
       <Home />
