@@ -7,12 +7,13 @@
 body {
   /* background-image: linear-gradient(to right, #d2cd54, #6b8d1d, #4a7433); */
   /* background-image: linear-gradient(to top, black, #25372a); */
-  background-image: url("./pictures/XmasbK2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(108, 2, 2);
+  background-image: url("./pictures/Xmas-cookies-02.png");
+  background-size: 20em;
+  background-repeat: repeat;
   color: rgb(248, 254, 217);
   font-weight: 200;
-
+  background-attachment: fixed;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -54,6 +55,8 @@ button h2 {
   font-size: 2rem;
 }
 
+/* Styling Navigation Buttons END */
+
 .container {
   display: flex;
   flex-direction: row;
@@ -65,14 +68,27 @@ button h2 {
 img {
   max-height: 100%;
   max-width: 100%;
+  border-radius: 15px;
 }
-
+/* Top card animation START */
 section {
   perspective: 2000px;
   overflow: hidden;
   max-width: 30vh;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+}
+
+section:hover {
+  cursor: pointer;
+  background: rgb(53, 2, 15);
+  box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211);
+}
+
+.pictireContainer {
+  padding-top: 8rem;
+  padding-bottom: 0.5rem;
 }
 
 .main-div {
@@ -81,7 +97,7 @@ section {
   transform-style: preserve-3d;
   transition: transform 3s ease;
   /* transform: rotateY(180deg); */
-  box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+  /* box-shadow: rgb(16, 16, 16) 0px 5px 15px; */
 }
 
 .backSide,
@@ -101,29 +117,35 @@ section {
 
 .toggleCard {
   transition: transform 2s ease;
-  box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+  /* box-shadow: rgb(16, 16, 16) 0px 5px 15px; */
   transform: rotateY(180deg);
 }
-/* transform: rotateY(90deg); */
+/* Top card animation END */
+
+/* Styling Navigation START */
 .link {
   color: rgb(247, 250, 255);
-  background-color: rgb(142, 162, 68);
+  background-color: rgb(103, 140, 62);
   text-decoration: none;
   font-weight: bold;
-  border: 3px solid rgb(33, 67, 12);
+  border: 1px solid rgb(96, 136, 71);
   margin: 20px;
   padding: 5px 15px 10px;
   margin: 0 5px;
   display: inline-block;
   border-radius: 10% 10% 50% 50%;
   text-align: end;
+  box-shadow: inset -2px -3px 4px rgba(18, 18, 18, 0.5),
+    inset 3px 4px 5px rgba(205, 230, 185, 0.8);
 }
 
 .link:hover {
   color: rgb(11, 74, 11);
   background-color: rgb(178, 240, 78);
   cursor: -webkit-grabbing;
-  box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211);
+  box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211),
+    inset -2px -3px 4px rgba(13, 58, 15, 0.5),
+    inset 3px 4px 5px rgba(255, 255, 255, 0.8);
 }
 
 .link:active {
@@ -133,12 +155,30 @@ section {
 }
 
 .navigation {
-  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.1rem 5rem 0.1rem;
+  background-image: linear-gradient(
+    rgb(0, 69, 22, 1),
+    rgb(0, 69, 22, 0.95),
+    rgb(108, 2, 2, 0.1),
+    rgb(108, 2, 2, 0.005)
+  );
+  position: fixed;
+  margin-bottom: 2rem;
+  width: 100%;
+  
 }
+.NavBarContainer {
+  display: flex;
+}
+/* Styling Navigation END */
 
 .xmasTree {
   font-size: 5rem;
 }
+
+/* Market List */
 
 .marketListContainer {
   display: flex;
@@ -200,3 +240,39 @@ section {
   padding: 1em;
   pointer-events: none;
 }
+
+/* Footer styling */
+.footerMainDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: 100%;
+  padding:3rem 2rem 2rem 2rem ; 
+  margin-bottom: 0;
+  background-image: linear-gradient(
+    rgb(108, 2, 2, 0.005),
+    rgb(108, 2, 2, 0.1),
+    rgb(0, 69, 22, 0.95),
+    rgb(0, 69, 22, 1)
+  );
+}
+
+.textFooter{
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+i {
+  font-size: 2rem;
+  background-color: rgb(160, 103, 32, 0);
+}
+
+i:hover {
+  box-shadow: -2px -2px 10px rgb(245, 247, 211), 2px 2px 10px rgb(245, 247, 211);
+   
+}
+a { 
+  padding:0.8rem;
+  color: rgb(248, 254, 217);
+}
+

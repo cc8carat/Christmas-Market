@@ -5,10 +5,12 @@ import Navibar from "./components/Navibar";
 import MarketsList from "./components/MarketsList";
 import { Switch, link, Route } from "react-router-dom";
 import { client } from "./components/client";
+import Footer from './components/Footer';
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
+  console.log(process.env);
 
   const clickHandler = (event) => {
     //event.target.id = <entry_id>
@@ -33,12 +35,15 @@ const App = () => {
 
   return (
     <div className="App appMainDiv">
-      <div className="headerDiv">
-        <h1>This is a journey through the Europe's Christmas markets</h1>
-      </div>
+
       <div className="navigation">
         <Navibar />
+        <div className="headerDiv">
+        <h3>Christmas Markets of Europe</h3>
       </div>
+       
+      </div>
+     
       <div className="picture">
         <Picture />
       </div>
@@ -49,6 +54,9 @@ const App = () => {
         ) : (
           <MarketsList markets={markets} onclick={clickHandler} />
         )}
+      </div>
+      <div >
+        <Footer />
       </div>
     </div>
   );
