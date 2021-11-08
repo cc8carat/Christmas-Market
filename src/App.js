@@ -35,12 +35,15 @@ const App = () => {
 
   return (
     <div className="App appMainDiv">
-      <div className="headerDiv">
-        <h1>This is a journey through the Europe's Christmas markets</h1>
-      </div>
+
       <div className="navigation">
         <Navibar />
+        <div className="headerDiv">
+        <h3>Christmas Markets of Europe</h3>
       </div>
+       
+      </div>
+     
       <div className="picture">
         <Picture />
       </div>
@@ -52,7 +55,7 @@ const App = () => {
           <MarketsList markets={markets} onclick={clickHandler} />
         )}
       </div>
-      <div className='footerMainDiv'>
+      <div >
         <Footer />
       </div>
     </div>
