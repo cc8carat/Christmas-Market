@@ -193,7 +193,6 @@ section {
   flex-direction: column;
   justify-content: space-between;
   min-height: 9em;
-  pointer-events: none;
 }
 
 .textContainer h2 {

@@ -21,6 +21,7 @@ const Picture = () => {
          <img src={XmasTree} alt="picture 1" />
        </div>
        <div className="backSide">
+         
                   <img src={XmasTree2} alt="picture of a christmas tree" />
                 </div>
     </div>
