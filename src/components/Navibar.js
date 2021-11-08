@@ -4,6 +4,7 @@ import { NavLink, Switch, Route } from "react-router-dom";
 import About from "./About"
 import Home from "./Home"
 import Contact from "./Contact"
+import Market from './Market';
 
 const Navibar = () => {
 
@@ -39,6 +40,9 @@ return(
       </Route>
       <Route path="/Contact">
       <Contact />
+      </Route>
+      <Route path="/market/:marketID">
+      <Market />
       </Route>
     </Switch>
 </>

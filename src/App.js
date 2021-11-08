@@ -3,21 +3,14 @@ import React, { useEffect, useState } from "react";
 import Picture from "./components/Picture";
 import Navibar from "./components/Navibar";
 import MarketsList from "./components/MarketsList";
-import { Switch, link, Route } from "react-router-dom";
+import Market from "./components/Market";
+// import { Switch, link, Route } from "react-router-dom";
 import { client } from "./components/client";
 import Footer from './components/Footer';
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
-  console.log(process.env);
-
-  const clickHandler = (event) => {
-    //event.target.id = <entry_id>
-    //Can try to use client.getEntry('event.target.id') to see if it works
-    console.log(event.target);
-    console.log(event.target.id);
-  };
 
   useEffect(() => {
     const getMarkets = async () => {
@@ -52,8 +45,11 @@ const App = () => {
         {loading ? (
           "🎄"
         ) : (
-          <MarketsList markets={markets} onclick={clickHandler} />
+          <MarketsList markets={markets} />
         )}
+      </div>
+      <div className="market">
+        <Market />
       </div>
       <div >
         <Footer />
