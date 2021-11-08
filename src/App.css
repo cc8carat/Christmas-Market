@@ -7,9 +7,10 @@
 body {
   /* background-image: linear-gradient(to right, #d2cd54, #6b8d1d, #4a7433); */
   /* background-image: linear-gradient(to top, black, #25372a); */
-  background-image: url("./pictures/XmasbK2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(108, 2, 2);
+  background-image: url("./pictures/Xmas-cookies-02.png");
+  background-size: 20em;
+  background-repeat: repeat;
   color: rgb(248, 254, 217);
   font-weight: 200;
 
@@ -42,6 +43,7 @@ button:hover {
   box-shadow: -5px -5px 20px rgb(245, 247, 211), 5px 5px 20px rgb(245, 247, 211);
   background-color: rgb(178, 240, 78);
   cursor: grabbing;
+
 }
 
 button:active {
@@ -53,6 +55,10 @@ button h2 {
   padding: 0rem 0.5rem;
   font-size: 2rem;
 }
+
+
+
+/* Styling Navigation Buttons END */
 
 .container {
   display: flex;
@@ -68,7 +74,7 @@ img {
  border-radius: 15px;
  
 }
-
+/* Top card animation START */
 section {
   perspective: 2000px;
   overflow: hidden;
@@ -91,7 +97,7 @@ section:hover {
   transform-style: preserve-3d;
   transition: transform 3s ease;
   /* transform: rotateY(180deg); */
-  box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+ /* box-shadow: rgb(16, 16, 16) 0px 5px 15px; */
 }
 
 .backSide,
@@ -111,11 +117,13 @@ section:hover {
 
 .toggleCard {
   transition: transform 2s ease;
-  box-shadow: rgb(16, 16, 16) 0px 5px 15px;
+  /* box-shadow: rgb(16, 16, 16) 0px 5px 15px; */
   transform: rotateY(180deg);
    
 }
-/* transform: rotateY(90deg); */
+/* Top card animation END */
+
+/* Styling Navigation START */
 .link {
   color: rgb(247, 250, 255);
   background-color: rgb(142, 162, 68);
@@ -143,13 +151,30 @@ section:hover {
   cursor: -webkit-grabbing;
 }
 
+.button::after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 50%;
+  height: 35%;
+  transform: rotate(-45deg);
+  background:  linear-gradient(190deg, rgba(255,255,255,0.7), rgba(255,255,255,0)) ;
+  border-radius: 50%;
+  
+}
+
 .navigation {
   padding: 2rem 1rem;
 }
 
+/* Styling Navigation END */
+
 .xmasTree {
   font-size: 5rem;
 }
+
+/* Market List */
 
 .marketListContainer {
   display: flex;
@@ -210,4 +235,9 @@ section:hover {
 .textContainer h2 {
   padding: 1em;
   pointer-events: none;
+}
+
+/* Footer styling */
+.footerMainDiv{
+  background-color: rgb(7, 65, 35);
 }

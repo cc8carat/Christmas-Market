@@ -5,6 +5,7 @@ import Navibar from "./components/Navibar";
 import MarketsList from "./components/MarketsList";
 import { Switch, link, Route } from "react-router-dom";
 import { client } from "./components/client";
+import Footer from './components/Footer';
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
@@ -50,6 +51,9 @@ const App = () => {
         ) : (
           <MarketsList markets={markets} onclick={clickHandler} />
         )}
+      </div>
+      <div className='footerMainDiv'>
+        <Footer />
       </div>
     </div>
   );
