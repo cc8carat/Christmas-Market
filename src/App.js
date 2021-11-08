@@ -4,7 +4,7 @@ import Picture from "./components/Picture";
 import Navibar from "./components/Navibar";
 import MarketsList from "./components/MarketsList";
 import Market from "./components/Market";
-// import { Switch, link, Route } from "react-router-dom";
+import { Switch, link, Route } from "react-router-dom";
 import { client } from "./components/client";
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
       <div className="picture">
         <Picture />
       </div>
-
+    <Route exact path="/"> 
       <div>
         {loading ? (
           "🎄"
@@ -44,9 +44,7 @@ const App = () => {
           <MarketsList markets={markets} />
         )}
       </div>
-      <div className="market">
-        <Market />
-      </div>
+      </Route> 
 
     </div>
   );

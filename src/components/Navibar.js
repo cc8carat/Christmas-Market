@@ -13,7 +13,7 @@ return(
   <nav>
         <NavLink
           className="link"
-          to="/Home">
+          to="/">
           Home
         </NavLink>
         <NavLink
@@ -28,7 +28,7 @@ return(
         </NavLink>
  </nav>
  <Switch>
-      <Route path="/Home">
+      <Route exact path="/">
       <Home />
       </Route>
       <Route path="/About">

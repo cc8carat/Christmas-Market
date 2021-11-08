@@ -25,6 +25,7 @@ const MarketsList = ({ markets}) => {
         }
       )}
     </div>
+    
   );
 };
 
