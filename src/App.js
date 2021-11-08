@@ -6,11 +6,12 @@ import MarketsList from "./components/MarketsList";
 import Market from "./components/Market";
 import { Switch, link, Route } from "react-router-dom";
 import { client } from "./components/client";
+import Footer from './components/Footer';
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
- 
+
   useEffect(() => {
     const getMarkets = async () => {
       try {
@@ -27,12 +28,15 @@ const App = () => {
 
   return (
     <div className="App appMainDiv">
-      <div className="headerDiv">
-        <h1>This is a journey through the Europe's Christmas markets</h1>
-      </div>
+
       <div className="navigation">
         <Navibar />
+        <div className="headerDiv">
+        <h3>Christmas Markets of Europe</h3>
       </div>
+       
+      </div>
+     
       <div className="picture">
         <Picture />
       </div>
@@ -45,6 +49,10 @@ const App = () => {
         )}
       </div>
       </Route> 
+
+      <div >
+        <Footer />
+      </div>
 
     </div>
   );
