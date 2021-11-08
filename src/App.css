@@ -167,7 +167,6 @@ section:hover {
   position: fixed;
   margin-bottom: 2rem;
   width: 100%;
-  
 }
 .NavBarContainer {
   display: flex;
@@ -194,6 +193,8 @@ section:hover {
   margin: 2em;
   background-color: white;
   border-radius: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .marketListItem:hover {
@@ -246,7 +247,7 @@ section:hover {
   align-items: center;
   flex-direction: column;
   background-size: 100%;
-  padding:3rem 2rem 2rem 2rem ; 
+  padding: 3rem 2rem 2rem 2rem;
   margin-bottom: 0;
   background-image: linear-gradient(
     rgb(108, 2, 2, 0.005),
@@ -256,7 +257,7 @@ section:hover {
   );
 }
 
-.textFooter{
+.textFooter {
   padding-top: 5rem;
   padding-bottom: 0.5rem;
 }
@@ -268,10 +269,8 @@ i {
 
 i:hover {
   box-shadow: -2px -2px 10px rgb(245, 247, 211), 2px 2px 10px rgb(245, 247, 211);
-   
 }
-a { 
-  padding:0.8rem;
+a {
+  padding: 0.8rem;
   color: rgb(248, 254, 217);
 }
-
