@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 import Picture from "./components/Picture";
 import Navibar from "./components/Navibar";
 import MarketsList from "./components/MarketsList";
-import Market from "./components/Market";
-import { Switch, link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { client } from "./components/client";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
@@ -28,7 +27,6 @@ const App = () => {
 
   return (
     <div className="App appMainDiv">
-
       <div className="navigation">
         <Navibar />
         <div className="headerDiv">
@@ -56,7 +54,7 @@ const App = () => {
       <div >
         <Footer />
       </div>
-      
+
     </div>
   );
 };
