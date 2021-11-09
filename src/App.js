@@ -58,6 +58,11 @@ const App = () => {
       </div>
       <div >
         <Footer />
+      <div >
+        <Footer />
+      </div>
+      <div >
+        <Footer />
       </div>
     </div>
   );
