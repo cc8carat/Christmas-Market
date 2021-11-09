@@ -33,14 +33,13 @@ const App = () => {
         <Navibar />
         <div className="headerDiv">
         <h3>Christmas Markets of Europe</h3>
-      </div>
-       
-      </div>
-     
+      </div>       
+      </div>      
+
+      <Route exact path="/"> 
       <div className="picture">
         <Picture />
-      </div>
-    <Route exact path="/"> 
+      </div>   
       <div>
         {loading ? (
           "🎄"
@@ -50,10 +49,14 @@ const App = () => {
       </div>
       </Route> 
 
+      <Route path="/market/:marketID">
+      <Market />
+      </Route>
+
       <div >
         <Footer />
       </div>
-
+      
     </div>
   );
 };
