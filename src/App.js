@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 import Picture from "./components/Picture";
 import Navibar from "./components/Navibar";
 import MarketsList from "./components/MarketsList";
-import Market from "./components/Market";
-import { Switch, link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { client } from "./components/client";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
@@ -28,32 +27,23 @@ const App = () => {
 
   return (
     <div className="App appMainDiv">
-
       <div className="navigation">
         <Navibar />
         <div className="headerDiv">
-        <h3>Christmas Markets of Europe</h3>
+          <h3>Christmas Markets of Europe</h3>
+        </div>
       </div>
-       
-      </div>
-     
+
       <div className="picture">
         <Picture />
       </div>
-    <Route exact path="/"> 
-      <div>
-        {loading ? (
-          "🎄"
-        ) : (
-          <MarketsList markets={markets} />
-        )}
-      </div>
-      </Route> 
+      <Route exact path="/">
+        <div>{loading ? "🎄" : <MarketsList markets={markets} />}</div>
+      </Route>
 
-      <div >
+      <div>
         <Footer />
       </div>
-
     </div>
   );
 };
