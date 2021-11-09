@@ -30,20 +30,31 @@ const App = () => {
       <div className="navigation">
         <Navibar />
         <div className="headerDiv">
-          <h3>Christmas Markets of Europe</h3>
-        </div>
-      </div>
+        <h3>Christmas Markets of Europe</h3>
+      </div>       
+      </div>      
 
+      <Route exact path="/"> 
       <div className="picture">
         <Picture />
+      </div>   
+      <div>
+        {loading ? (
+          "🎄"
+        ) : (
+          <MarketsList markets={markets} />
+        )}
       </div>
-      <Route exact path="/">
-        <div>{loading ? "🎄" : <MarketsList markets={markets} />}</div>
+      </Route> 
+
+      <Route path="/market/:marketID">
+      <Market />
       </Route>
 
-      <div>
+      <div >
         <Footer />
       </div>
+
     </div>
   );
 };
