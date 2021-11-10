@@ -25,6 +25,7 @@ const Market = ({ title, city, country, picture }) => {
     getMarket();
   }, [marketID]);
 
+  
   return (
     <div >
       {!loading && market ? (
@@ -36,7 +37,7 @@ const Market = ({ title, city, country, picture }) => {
           <h1>{market.fields.city}</h1>
           <h1>{market.fields.country}</h1>
           <h1>{market.fields.date}</h1>
-          <h5>{market.fields.description.content[0].content[0].value}</h5>
+          <h5>{market.fields.marketDescription}</h5>
           <div> <img src={market.fields.picture[0].fields.file.url} /> </div>
           </div>
       ) : (
