@@ -61,6 +61,13 @@ button h2 {
 
 /* Styling Navigation Buttons END */
 
+/* ABOUT page styling */
+.creators {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
 /* .container {
   display: flex;
   flex-direction: row;
@@ -85,8 +92,10 @@ img {
 }
 
 .landingHeaderDiv {
+  font-size: 2rem;
   padding-top: 8rem;
   text-align: center;
+  text-shadow: -5px -5px 15px rgb(245, 247, 211), 5px 5px 15px rgb(245, 247, 211);
 }
 
 /* Top card animation START */
@@ -188,10 +197,9 @@ section:hover {
   position: fixed;
   margin-bottom: 2rem;
   width: 100%;
+  font-size: 1.2rem;
 }
-.NavBarContainer {
-  display: flex;
-}
+ 
 /* Styling Navigation END */
 
 .xmasTree {
@@ -204,7 +212,7 @@ section:hover {
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: center; */
   flex-direction: column;
   background-size: 100%;
   padding: 8rem 2rem 2rem 2rem;
@@ -232,6 +240,7 @@ h6 {
 
 .socialMedia {
   padding: 0;
+  padding-left: 1rem;
   margin: 0;
 }
 

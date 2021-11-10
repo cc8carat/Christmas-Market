@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
 
     return(
-    <div className='footerMainDiv'>
+    <div >
         <div className='textFooter'>
         <h5 >Created by: Chloe, Zhi and Anna</h5>
         <h6 >Share or follow us on:</h6>
