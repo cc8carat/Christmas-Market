@@ -27,6 +27,20 @@ h2 {
   padding: 1rem 0rem;
 }
 
+div {
+  text-align: center;
+}
+
+div > h1 {
+  color: rgb(255, 252, 170);
+  text-align: center;
+  text-shadow: -5px -5px 15px rgb(77, 77, 77), 5px 5px 15px rgb(55, 55, 55);
+}
+div > h5 {
+  
+}
+
+/* Styling Navigation Buttons START */
 button {
   display: flex;
   flex-direction: row;
@@ -68,13 +82,7 @@ button h2 {
   flex-direction: column;
 }
 
-/* .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 1rem;
-} */
+
 
 img {
   max-height: 100%;

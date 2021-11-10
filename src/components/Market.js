@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { client } from "./client";
+import Maps from "./Maps";
 
 const Market = ({ title, city, country, picture }) => {
   const { marketID } = useParams();
@@ -41,6 +42,7 @@ const Market = ({ title, city, country, picture }) => {
       ) : (
         "Loading..."
       )}
+      <Maps />
     </div>
   );
 };
