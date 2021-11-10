@@ -6,7 +6,7 @@ import MarketsList from "./components/MarketsList";
 import { Route } from "react-router-dom";
 import { client } from "./components/client";
 import Footer from "./components/Footer";
-
+import Market from "./components/Market";
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
