@@ -6,6 +6,7 @@ import MarketsList from "./components/MarketsList";
 import { Route } from "react-router-dom";
 import { client } from "./components/client";
 import Footer from "./components/Footer";
+import Market from "./components/Market";
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
@@ -29,10 +30,11 @@ const App = () => {
     <div className="App appMainDiv">
       <div className="navigation">
         <Navibar />
-        <div className="headerDiv">
+        <div className="landingHeaderDiv">
         <h3>Christmas Markets of Europe</h3>
-      </div>       
-      </div>      
+      </div>    
+      </div>   
+  
 
       <Route exact path="/"> 
       <div className="picture">
@@ -51,7 +53,7 @@ const App = () => {
       <Market />
       </Route>
 
-      <div >
+      <div className='footerMainDiv'>
         <Footer />
       </div>
 
