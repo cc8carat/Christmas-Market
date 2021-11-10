@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Picture from './Picture';
 const Contact = () => {
 
     return(
@@ -9,7 +9,21 @@ const Contact = () => {
           <button> 
           <h2>✉️</h2>
           </button>
-        </div> 
+         </div> 
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
+         <h2>You can contact us sent us a message</h2>
     </div>
     )
 }

@@ -30,10 +30,11 @@ const App = () => {
     <div className="App appMainDiv">
       <div className="navigation">
         <Navibar />
-        <div className="headerDiv">
+              
+      </div>   
+      <div className="landingHeaderDiv">
         <h3>Christmas Markets of Europe</h3>
-      </div>       
-      </div>      
+      </div>   
 
       <Route exact path="/"> 
       <div className="picture">
