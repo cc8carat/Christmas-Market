@@ -14,7 +14,7 @@ body {
   color: rgb(248, 254, 217);
   font-weight: 200;
   background-attachment: fixed;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
   align-items: center;
   flex-direction: column;
