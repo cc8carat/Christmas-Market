@@ -7,6 +7,7 @@ import { Route } from "react-router-dom";
 import { client } from "./components/client";
 import Footer from "./components/Footer";
 import Market from "./components/Market";
+import MapMain from "./components/MapMain";
 
 const App = () => {
   const [markets, setMarkets] = useState([]);
@@ -18,6 +19,7 @@ const App = () => {
         setLoading(true);
         const result = await client.getEntries();
         setMarkets(result.items);
+        console.log(markets)
         setLoading(false);
       } catch (error) {
         return alert("Sorry, it is too early for Christmas");
@@ -25,6 +27,7 @@ const App = () => {
     };
     getMarkets();
   }, []);
+
 
   return (
     <div className="App appMainDiv">
@@ -34,26 +37,30 @@ const App = () => {
         <h3>Christmas Markets of Europe</h3>
       </div>    
       </div>   
-  
 
       <Route exact path="/"> 
       <div className="picture">
         <Picture />
       </div>   
+      
       <div>
         {loading ? (
           "🎄"
         ) : (
-          <MarketsList markets={markets} />
+          <MarketsList markets={markets} />        
         )}
       </div>
-      </Route> 
+      </Route>      
 
       <Route path="/market/:marketID">
       <Market />
       </Route>
 
-      <div className='footerMainDiv'>
+      <Route exact path="/">
+      <MapMain markets={markets}/>
+      </Route>  
+
+           <div className='footerMainDiv'>
         <Footer />
       </div>
 
