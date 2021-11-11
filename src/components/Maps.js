@@ -4,7 +4,7 @@ import { Map, Marker } from "pigeon-maps";
 const Maps = ({ lat, lon }) => {
   return (
     <>
-     <div className="marketListContainer">
+     <div className="mapContainer">
       <Map height={300} defaultCenter={[lat, lon]} defaultZoom={11}>
         <Marker width={50} anchor={[lat, lon]} />
       </Map>
