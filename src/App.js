@@ -7,8 +7,10 @@ import { Route } from "react-router-dom";
 import { client } from "./components/client";
 import Footer from "./components/Footer";
 import Market from "./components/Market";
+import Contact from "./components/Contact";
+import About from "./components/About";
 import MapMain from "./components/MapMain";
-
+ 
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -59,7 +61,12 @@ const App = () => {
       <Route exact path="/">
       <MapMain markets={markets}/>
       </Route>  
-
+      <Route path="/About">
+              <About />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
            <div className='footerMainDiv'>
         <Footer />
       </div>

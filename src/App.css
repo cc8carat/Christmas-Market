@@ -92,6 +92,8 @@ img {
 }
 /* page titles for Home Contact Aout and landing page  */
 .pageHead {
+  display: flex;
+  flex-direction: column;
   margin-top: 1rem;
   padding-top: 3rem;
 }
@@ -278,6 +280,7 @@ a {
   justify-content: center;
   color: black;
   max-width: 90%;
+  border-radius: 50%`;
 }
 
 .marketListItem {
