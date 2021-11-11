@@ -3,7 +3,9 @@ import { Map, Marker } from "pigeon-maps";
 
 const MapMain = ({ markets }) => {
   return (
-    <div className="marketListContainer">
+    <div className="mapContainer">
+      <div className='mapBorder'> </div>
+      
       <Map height={500} defaultCenter={[52.531677, 13.381777]} defaultZoom={11}>
         {markets.map(
           ({
