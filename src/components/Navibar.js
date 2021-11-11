@@ -25,12 +25,7 @@ const Navibar = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/About">
-              <About />
-            </Route>
-            <Route path="/Contact">
-              <Contact />
-            </Route>
+
           </Switch>
         </nav>
       </div>

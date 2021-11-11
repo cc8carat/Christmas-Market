@@ -7,6 +7,10 @@ import { Route } from "react-router-dom";
 import { client } from "./components/client";
 import Footer from "./components/Footer";
 import Market from "./components/Market";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import MapMain from "./components/MapMain";
+ 
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -17,6 +21,7 @@ const App = () => {
         setLoading(true);
         const result = await client.getEntries();
         setMarkets(result.items);
+        console.log(markets)
         setLoading(false);
       } catch (error) {
         return alert("Sorry, it is too early for Christmas");
@@ -25,33 +30,44 @@ const App = () => {
     getMarkets();
   }, []);
 
+
   return (
     <div className="App appMainDiv">
       <div className="navigation">
         <Navibar />
-        <div className="headerDiv">
+        <div className="landingHeaderDiv">
         <h3>Christmas Markets of Europe</h3>
-      </div>       
-      </div>      
+      </div>    
+      </div>   
 
       <Route exact path="/"> 
       <div className="picture">
         <Picture />
       </div>   
+      
       <div>
         {loading ? (
           "🎄"
         ) : (
-          <MarketsList markets={markets} />
+          <MarketsList markets={markets} />        
         )}
       </div>
-      </Route> 
+      </Route>      
 
       <Route path="/market/:marketID">
       <Market />
       </Route>
 
-      <div >
+      <Route exact path="/">
+      <MapMain markets={markets}/>
+      </Route>  
+      <Route path="/About">
+              <About />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+           <div className='footerMainDiv'>
         <Footer />
       </div>
 
