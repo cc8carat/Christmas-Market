@@ -47,7 +47,13 @@ const App = () => {
       
       <div>
         {loading ? (
-          "🎄"
+                      <div className='bouncer'>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                     </div>
         ) : (
           <MarketsList markets={markets} />        
         )}

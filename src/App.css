@@ -334,3 +334,68 @@ a {
   padding: 1em;
   pointer-events: none;
 }
+
+/* https://fontawesome.com/v5.15/icons/star */
+.pigeon-overlays{
+  border-radius: 30%;
+}
+
+/* spinner */
+.bouncer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 200px;
+  height: 200px;
+}
+
+.bouncer div {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(39, 155, 66);
+  border-radius: 50%;
+  animation: bouncer 0.5s cubic-bezier(0.18, 0.5, 0.3, 0.9) infinite alternate;
+  bottom: 1rem;
+  box-shadow: inset -2px -3px 4px rgba(18, 18, 18, 0.3);
+}
+
+.bouncer div::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 50%;
+  height: 35%;
+  transform: rotate(-45deg);
+  background: linear-gradient(
+    190deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 50%;
+}
+
+@keyframes bouncer {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-65px);
+  }
+}
+
+.bouncer div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.bouncer div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncer div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.bouncer div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.bouncer div:nth-child(5) {
+  animation-delay: 0.5s;
+}
