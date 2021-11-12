@@ -10,7 +10,7 @@ import Market from "./components/Market";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import MapMain from "./components/MapMain";
- 
+import Stars from "./components/Stars";
 const App = () => {
   const [markets, setMarkets] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -32,7 +32,10 @@ const App = () => {
 
 
   return (
-    <div className="App appMainDiv">
+    <div className="appMainDiv">
+           <div className='stars'>
+       <Stars />
+    </div>
       <div className="navigation">
         <Navibar />
         <div className="landingHeaderDiv">
