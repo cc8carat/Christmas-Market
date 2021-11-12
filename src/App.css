@@ -20,6 +20,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   font-family: Courgette;
+  text-shadow:  -1px -1px 2px rgb(24, 24, 24);
 }
 
 h2 {
@@ -36,8 +37,7 @@ div > h1 {
   text-align: center;
   text-shadow: -5px -5px 15px rgb(77, 77, 77), 5px 5px 15px rgb(55, 55, 55);
 }
-div > h5 {
-}
+ 
 
 /* Styling Navigation Buttons START */
 button {
@@ -53,6 +53,7 @@ button {
   font-size: 1.4rem;
   font-weight: 800;
   text-align: center;
+  
 }
 
 button:hover {
@@ -147,9 +148,9 @@ section:hover {
   position: absolute;
 }
 
-.frontSide {
-  /* backface-visibility: hidden;   */
-}
+/* .frontSide {
+  backface-visibility: hidden;  
+} */
 
 .toggleCard {
   transition: transform 2s ease;
