@@ -8,7 +8,14 @@ const Contact = () => {
           <button> 
           <h2>✉️</h2>
           </button>
-         </div>              
+         </div>  
+         <div className='bouncer'>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       </div>            
     </div>
     )
 }
