@@ -5,12 +5,17 @@ import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
 import Market from "./Market";
-
+import Stars from "./Stars";
 const Navibar = () => {
   return (
     <>
+
       <div className="NavBarContainer">
         <nav>
+           <div>
+             <Stars />
+            </div>  
+
           <NavLink className="link" to="/">
             Home
           </NavLink>
@@ -28,6 +33,7 @@ const Navibar = () => {
 
           </Switch>
         </nav>
+        
       </div>
     </>
   );

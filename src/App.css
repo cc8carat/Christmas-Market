@@ -20,7 +20,10 @@ body {
   justify-content: space-between;
   flex-direction: column;
   font-family: Courgette;
+  text-shadow:  -1px -1px 2px rgb(24, 24, 24);
 }
+
+ 
 
 h2 {
   display: flex;
@@ -36,8 +39,7 @@ div > h1 {
   text-align: center;
   text-shadow: -5px -5px 15px rgb(77, 77, 77), 5px 5px 15px rgb(55, 55, 55);
 }
-div > h5 {
-}
+ 
 
 /* Styling Navigation Buttons START */
 button {
@@ -53,6 +55,7 @@ button {
   font-size: 1.4rem;
   font-weight: 800;
   text-align: center;
+  
 }
 
 button:hover {
@@ -79,6 +82,7 @@ button h2 {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
+  text-shadow:  -1px -1px 20px rgb(6, 0, 0);
 }
 
 img {
@@ -147,9 +151,9 @@ section:hover {
   position: absolute;
 }
 
-.frontSide {
-  /* backface-visibility: hidden;   */
-}
+/* .frontSide {
+  backface-visibility: hidden;  
+} */
 
 .toggleCard {
   transition: transform 2s ease;
@@ -195,7 +199,7 @@ section:hover {
   left: 0;
   display: flex;
   flex-direction: column;
-  padding: 1rem 0.1rem 6rem 0.1rem;
+  padding: 2.1rem 0.1rem 6rem 0.1rem;
   background-image: linear-gradient(
     rgb(0, 69, 22, 1),
     rgb(0, 69, 22, 0.95),
@@ -206,7 +210,7 @@ section:hover {
   margin-bottom: 2rem;
   width: 100%;
   font-size: 1.2rem;
-  z-index: 10;
+  z-index: 1;
 /*   z-index: 10; 设定元素显示级别（position:static元素无法设定级别，需要先设置position） */
 }
 
@@ -338,8 +342,28 @@ a {
 }
 
 /* https://fontawesome.com/v5.15/icons/star */
-.pigeon-overlays{
-  border-radius: 30%;
+ 
+
+
+
+/* Maps styles */
+
+.mapContainer{
+  display: flex;
+}
+
+.mapContainer{
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: -5px -5px 20px rgb(255, 255, 255), 5px 5px 20px rgb(255, 255, 255);
+  max-width: 70vh;
+  border-radius: 50px;
+  overflow: hidden;
+}
+/* Maps styles END */
+
+.breaks{
+  padding-top: 3rem;
 }
 
 /* spinner */
@@ -387,35 +411,125 @@ a {
 }
 
 .bouncer div:nth-child(1) {
+  background-color: rgb(70, 175, 25);
   animation-delay: 0.1s;
 }
 .bouncer div:nth-child(2) {
+  
+  background-color: rgb(254, 227, 24);
   animation-delay: 0.2s;
 }
 .bouncer div:nth-child(3) {
+  background-color: rgb(252, 6, 6);
   animation-delay: 0.3s;
 }
 .bouncer div:nth-child(4) {
+  background-color: rgb(252, 141, 6);
   animation-delay: 0.4s;
 }
 .bouncer div:nth-child(5) {
+  background-color: rgb(6, 158, 252);
   animation-delay: 0.5s;
 }
 
-
-/* Maps styles */
-
-.mapContainer{
+/* Christmas lights START*/
+.stars {
+  width: 100%;
   display: flex;
+  
 }
 
-.mapContainer{
-  justify-content: center;
-  align-items: flex-end;
-  box-shadow: -5px -5px 20px rgb(255, 255, 255), 5px 5px 20px rgb(255, 255, 255);
-  max-width: 70vh;
-  border-radius: 50px;
-  overflow: hidden;
+.StarsMainDiv {
+  display: flex;
+  position: fixed;
 }
+
+.circle2 {
+  animation: pulse 4s infinite ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 17px;
+  border-radius: 20% 20% 50% 50%;
+  z-index: 10;
+  
+  
+}
+.StarsMainDiv2 {
+  top:0;
+  left:0;
+ 
+ animation-delay: 2s;
+ display: flex;
+ position: absolute;
+ width:100%;
+ align-content: space-around;
 
  
+
+ }
+
+ @keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(1px 1px 13px rgba(255, 255, 255, 1));
+   /* box-shadow: -5px -5px 10px rgb(245, 247, 211), 
+   5px 5px 10px rgb(245, 247, 211); */
+
+  }
+  
+  50% {
+    transform: scale(0.9);
+    filter: drop-shadow(1px 1px 7px rgba(255, 255, 255, 1));
+    /* box-shadow: -5px -5px 20px rgb(245, 247, 211), 
+    5px 5px 20px rgb(245, 247, 211); */
+  }
+ 
+  100% {
+  transform: scale(1);
+  filter: drop-shadow(1px 1px 13px rgba(255, 255, 255, 1));
+   /* box-shadow: -5px -5px 10px rgb(245, 247, 211), 
+   5px 5px 10px rgb(245, 247, 211); */
+   
+  }
+}
+
+.StarsMainDiv2 div:nth-child(1){
+  background-color: rgb(22, 222, 4);
+  transform: rotate(10deg);
+  }
+.StarsMainDiv2 div:nth-child(2) {
+  background-color: rgb(221, 0, 255);
+}
+.StarsMainDiv2 div:nth-child(3) {
+  background-color: red;
+}
+.StarsMainDiv2 div:nth-child(4) {
+  background-color: rgb(85, 110, 253);
+}
+.StarsMainDiv2 div:nth-child(5) {
+  background-color: rgb(255, 255, 0);
+  
+}
+.StarsMainDiv2 div:nth-child(6) {
+  background-color: rgb(255, 153, 0);
+  
+}
+.StarsMainDiv2 div:nth-child(7) {
+  background-color: rgb(221, 0, 255);
+}
+
+.StarsMainDiv2 div:nth-child(8) {
+  background-color: red;
+}
+.StarsMainDiv2 div:nth-child(9) {
+  background-color: rgb(255, 255, 0);
+  
+}
+
+
+/* Christmas lights END*/

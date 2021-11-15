@@ -1,5 +1,5 @@
 import React from "react";
-
+import Stars from "./Stars";
 const About = () =>  {
   return (
     <div className='pageHead'  >
@@ -11,9 +11,6 @@ const About = () =>  {
      <div> ⭐ Chloe </div>
      <div> 🎁 Zhi</div>
      <div> 🦌 Anna</div>
-    
-     
-
      </div>
 
    </div>
