@@ -38,6 +38,7 @@ const Market = () => {
             {" "}
             <img src={market.fields.picture[0].fields.file.url} />{" "}
           </div>
+          <br />
           <Maps
             lat={market.fields.location.lat}
             lon={market.fields.location.lon}
