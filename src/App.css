@@ -82,6 +82,7 @@ button h2 {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
+  text-shadow:  -1px -1px 20px rgb(6, 0, 0);
 }
 
 img {
@@ -433,12 +434,9 @@ a {
 
 /* Christmas lights START*/
 .stars {
-  z-index: 2;
-  position: relative;
- 
- 
-   
- 
+  width: 100%;
+  display: flex;
+  
 }
 
 .StarsMainDiv {
@@ -462,14 +460,23 @@ a {
   
 }
 .StarsMainDiv2 {
-  animation-delay: 2s;
-  display: flex;
+  top:0;
+  left:0;
+ 
+ animation-delay: 2s;
+ display: flex;
+ position: absolute;
+ width:100%;
+ align-content: space-around;
+
+ 
+
  }
 
  @keyframes pulse {
   0% {
     transform: scale(1);
-    filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 1));
+    filter: drop-shadow(1px 1px 13px rgba(255, 255, 255, 1));
    /* box-shadow: -5px -5px 10px rgb(245, 247, 211), 
    5px 5px 10px rgb(245, 247, 211); */
 
@@ -484,7 +491,7 @@ a {
  
   100% {
   transform: scale(1);
-  filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 1));
+  filter: drop-shadow(1px 1px 13px rgba(255, 255, 255, 1));
    /* box-shadow: -5px -5px 10px rgb(245, 247, 211), 
    5px 5px 10px rgb(245, 247, 211); */
    

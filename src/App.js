@@ -33,9 +33,7 @@ const App = () => {
 
   return (
     <div className="appMainDiv">
-           <div className='stars'>
-       <Stars />
-    </div>
+
       <div className="navigation">
         <Navibar />
         <div className="landingHeaderDiv">

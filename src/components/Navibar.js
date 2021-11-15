@@ -11,8 +11,11 @@ const Navibar = () => {
     <>
 
       <div className="NavBarContainer">
-        
         <nav>
+           <div>
+             <Stars />
+            </div>  
+
           <NavLink className="link" to="/">
             Home
           </NavLink>
