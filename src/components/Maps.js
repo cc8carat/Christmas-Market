@@ -1,14 +1,19 @@
-import React from "react";
 import { Map, Marker } from "pigeon-maps";
 
 const Maps = ({ lat, lon }) => {
+  const latToNumber = Number.parseFloat(lat);
+  const lonToNumber = Number.parseFloat(lon);
   return (
     <>
-     <div className="mapContainer">
-      <Map height={300} defaultCenter={[lat, lon]} defaultZoom={11}>
-        <Marker width={50} anchor={[lat, lon]} />
-      </Map>
-    </div>
+      <div className="mapContainer">
+        <Map
+          height={300}
+          defaultCenter={[latToNumber, lonToNumber]}
+          defaultZoom={11}
+        >
+          <Marker width={50} anchor={[latToNumber, lonToNumber]} />
+        </Map>
+      </div>
     </>
   );
 };
