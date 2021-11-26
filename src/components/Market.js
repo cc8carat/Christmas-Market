@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import { client } from "./client";
 import Maps from "./Maps";
+import axios from "axios";
 
 const Market = () => {
   const { marketID } = useParams();
@@ -13,8 +13,10 @@ const Market = () => {
     const getMarket = async () => {
       try {
         setLoading(true);
-        const result = await client.getEntry(marketID);
-        setMarket(result);
+        const { data } = await axios.get(
+          `https://wbs020-christmasmarket-backend.herokuapp.com/markets/${marketID}`
+        );
+        setMarket(data);
         setLoading(false);
       } catch (error) {
         return alert("Sorry, it is too early for Christmas");
@@ -29,29 +31,26 @@ const Market = () => {
       {!loading && market ? (
         <div>
           <br />
-          <h1>{market.fields.title}</h1>
-          <h1>{market.fields.city}</h1>
-          <h1>{market.fields.country}</h1>
-          <h1>{market.fields.date}</h1>
-          <h5>{market.fields.marketDescription}</h5>
+          <h1>{market.title}</h1>
+          <h1>{market.city}</h1>
+          <h1>{market.country}</h1>
+          <h1>{market.duration}</h1>
+          <h5>{market.marketDescription}</h5>
           <div>
             {" "}
-            <img src={market.fields.picture[0].fields.file.url} />{" "}
+            <img src={market.imageUrl} />{" "}
           </div>
- 
-          <Maps
-            lat={market.fields.location.lat}
-            lon={market.fields.location.lon}
-          />
+
+          <Maps lat={market.lat} lon={market.lon} />
         </div>
       ) : (
-        <div className='bouncer'>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-       </div>
+        <div className="bouncer">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       )}
     </div>
   );
