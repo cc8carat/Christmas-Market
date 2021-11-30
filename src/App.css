@@ -533,3 +533,69 @@ a {
 
 
 /* Christmas lights END*/
+/* contact form  START */
+.form {
+  display: flex;
+  font-size: 1.5rem;
+  /* background-color: chartreuse; */
+  align-content: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 8px 0;
+  border: 1px solid rgb(252, 255, 72);
+  border-radius: 4px;
+}
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 8px 0;
+  border: 1px solid rgb(252, 255, 72);
+  border-radius: 4px;
+}
+label {
+  padding: 0.5rem;
+}
+.nameInput {
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.nameInput > textarea {
+  display: flex;
+
+  align-items: flex-end;
+}
+
+.emailAddress {
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.3rem;
+}
+.contactMessage {
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.3rem;
+}
+.msgText {
+  align-content: flex-end;
+  left: 0px;
+  top: 0px;
+}
+.formButton {
+  display: flex;
+  font-family: Courgette;
+  padding: 0rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.buttonDiv {
+  align-content: flex-start;
+  padding-left: 18rem;
+}
+/* contact form  END */
