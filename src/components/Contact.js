@@ -8,7 +8,7 @@ const Contact = () => {
         </button>
       </div>
       <div className="bouncer">
-        <div></div>
+        <div>Anna</div>
         <div></div>
         <div></div>
         <div></div>
