@@ -8,11 +8,11 @@ const Contact = () => {
         </button>
       </div>
          <div className="form">
-        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
-          <div className="nameInput">
+           <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
+            <div className="nameInput">
             <label htmlFor="name">Name</label> 
             <input type="text" id="name" name="name" placeholder="Enter your name here" />
-          </div>
+            </div>
           <div className="emailAddress">
             <label htmlFor="email" >Email</label>  
             <input type="email" name="email" id="email" placeholder="Enter your email here" />
@@ -29,7 +29,7 @@ const Contact = () => {
       </div>
       <div className="bouncer">
         <div>Anna</div>
-        <div></div>
+        <div>Anna</div>
         <div></div>
         <div></div>
         <div></div>
