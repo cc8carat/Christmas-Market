@@ -28,8 +28,8 @@ const Contact = () => {
         </form>
       </div>
       <div className="bouncer">
-        <div>Anna</div>
-        <div>Anna</div>
+        <div></div>
+        <div></div>
         <div></div>
         <div></div>
         <div></div>
