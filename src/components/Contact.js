@@ -25,6 +25,8 @@ const Contact = () => {
           <div className="buttonDiv">
           <button type="submit" className="formButton">Send</button>
           </div>
+        </form>
+      </div>
       <div className="bouncer">
         <div>Anna</div>
         <div></div>
